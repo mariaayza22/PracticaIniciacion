@@ -1,0 +1,16 @@
+{
+    "Objectives": [
+        {
+            "ObjectID": "cubeG01",
+            "AreaID": "InArea"
+        },
+        {
+            "ObjectID": "cubeG02",
+            "AreaID": "InArea"
+        },
+        {
+            "ObjectID": "cubeG03",
+            "AreaID": "InArea"
+        }
+    ]
+}

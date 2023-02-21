@@ -1,27 +1,47 @@
 ﻿<Properties StartupConfiguration="{510EB37A-66EF-AE16-3E0E-97E078F860F6}|">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MAZ_Player.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bf481229-b6b2-48ad-bfed-9650d505a9f7" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene/Init.cs">
     <Files>
-      <File FileName="Assets/MouseLook.cs" Line="16" Column="9" />
-      <File FileName="Assets/ObjectCollision.cs" Line="19" Column="4" />
-      <File FileName="Assets/Scripts/MAZ_Player.cs" Line="124" Column="38" />
+      <File FileName="Assets/Scripts/MAZ_Area.cs" Line="29" Column="45" />
+      <File FileName="Assets/Scripts/MAZ_TaskManager.cs" Line="69" Column="1" />
+      <File FileName="Assets/template.json" Line="16" Column="2" />
+      <File FileName="Assets/Scripts/Audio/MAZ_AudioManager.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/Metrics/NewClass.cs" Line="28" Column="31" />
+      <File FileName="Assets/Scripts/Player/MAZ_Player.cs" Line="88" Column="18" />
+      <File FileName="Assets/Scripts/Tasks/MAZ_TaskData.cs" Line="26" Column="2" />
+      <File FileName="Assets/Scripts/Scene/Init.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PracticaIniciacion" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="Area" expanded="True" />
+                <Node name="Audio" expanded="True" />
+                <Node name="Inputs" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Metrics" expanded="True" />
+                <Node name="Objects" expanded="True" />
+                <Node name="Player" expanded="True" />
+                <Node name="Scene" expanded="True" />
+                <Node name="Tasks" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="68f3710b-d752-4982-8440-cfe6ff745500" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
