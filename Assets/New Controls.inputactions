@@ -27,7 +27,7 @@
                     "name": "Move",
                     "type": "PassThrough",
                     "id": "8a9a6a78-3d75-4969-b345-ca4a53a4aec7",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -121,9 +121,9 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "3D Vector",
-                    "id": "22ae1e3c-76ac-4793-bcdc-86f258158fc4",
-                    "path": "3DVector",
+                    "name": "2D Vector",
+                    "id": "4eca2e15-bfbd-46f8-aad1-d7e8283fbc8e",
+                    "path": "2DVector(mode=2)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -132,9 +132,20 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "left",
-                    "id": "b2a7441c-d0e2-4ea4-82d0-ab825579ca96",
-                    "path": "<Keyboard>/leftArrow",
+                    "name": "up",
+                    "id": "a42b6fa3-d2b8-4a27-9b5c-de81f4cfeae5",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "4a91ccc7-1299-4482-8bf6-1792698d0fa5",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -144,7 +155,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "0edd9e0c-cc36-4310-8f2b-54828406fdb9",
+                    "id": "c4cd0801-a9e1-4baf-b21a-661c38a6e27d",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -155,52 +166,8 @@
                 },
                 {
                     "name": "right",
-                    "id": "9519c5c1-08f9-451f-a466-5a70b21a1333",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "accd76b9-5488-4b50-9bcc-68f1fc73f187",
+                    "id": "f6d186e6-3b0b-4f96-ad7a-afed988f00b8",
                     "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "961d42e2-2887-4545-b0a0-fda70dcf75b1",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "3c4e83e4-24a3-4e0c-bcbc-fb6fe21467f8",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "025fd958-d765-4596-a569-d384ed15f6df",
-                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

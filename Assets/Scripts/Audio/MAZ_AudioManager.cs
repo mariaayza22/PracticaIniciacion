@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Test;
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class MAZ_AudioManager : MonoBehaviour
 {
     private static MAZ_AudioManager m_instance;

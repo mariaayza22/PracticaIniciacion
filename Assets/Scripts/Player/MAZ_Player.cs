@@ -41,9 +41,14 @@ namespace Test
 
         private Vector3 m_velocity; // Is going to store our current velocity.
 
-        
+        private MAZ_InputManager m_inputManager;
 
         // METHODS
+
+        private void Start()
+        {
+            m_inputManager = MAZ_InputManager.Instance;
+        }
 
         /// <summary>
         /// INTERACT()
@@ -52,7 +57,7 @@ namespace Test
         /// in generating a collision with.
         /// </summary>
 
-         void Interact()
+        void Interact()
         {
             //Return true if it hits and false if it doesn't.
             RaycastHit hit;
@@ -94,8 +99,6 @@ namespace Test
             }
         }
 
-       
-
 
         // UPDATE is called once per frame
 
@@ -111,8 +114,8 @@ namespace Test
             }
 
             //Get Input
-            float x = Input.GetAxis("Horizontal");
-            float z = Input.GetAxis("Vertical");
+            float x = m_inputManager != null ? m_inputManager.GetHorizontalAxis() : Input.GetAxis("Horizontal");
+            float z = m_inputManager != null ? m_inputManager.GetVerticalAxis() : Input.GetAxis("Vertical");
 
             /*Direction we want to move. We don't want global coordinates.
              transform.right takes the direction that the player is facing and then goes right*/
