@@ -59,10 +59,40 @@ namespace Test
             return m_playerActions.FindAction("Move").ReadValue<Vector3>().z;
         }
 
-        public bool IsInputPressed()
+        public bool IsMousePressed()
         {
+            if (!UseNewInputSystem)
+            {
+                return Input.GetMouseButtonDown(0);
+            }
+            return m_playerActions.FindAction("Grab").IsInProgress();
+        }
 
-            return false;
+        public bool IsSpacePressed()
+        {
+            if (!UseNewInputSystem)
+            {
+                return Input.GetKeyDown(KeyCode.Space);
+            }
+            return m_playerActions.FindAction("Release").IsInProgress();
+        }
+
+        public float GetMouseX()
+        {
+            if (!UseNewInputSystem)
+            {
+                return Input.GetAxis("Mouse X");
+            }
+            return m_playerActions.FindAction("Look").ReadValue<Vector3>().x;
+        }
+
+        public float GetMouseY()
+        {
+            if (!UseNewInputSystem)
+            {
+                return Input.GetAxis("Mouse Y");
+            }
+            return m_playerActions.FindAction("Look").ReadValue<Vector3>().y;
         }
 
     }

@@ -16,10 +16,15 @@ namespace Test
         private Graphics m_pointCenter;
         private Color m_objCentered;
 
+        private MAZ_InputManager m_inputManager;
+
+        // METHODS
+
         private void Start()
         {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            m_inputManager = MAZ_InputManager.Instance;
         }
 
         // Update is called once per frame
@@ -30,8 +35,8 @@ namespace Test
             that has gone by since the last time the update function was called. If our frame rate is high we are not going to be rotating
             quicker than if our frame rate is low.*/
 
-            float mouseX = Input.GetAxis("Mouse X") * m_mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * m_mouseSensitivity * Time.deltaTime;
+            float mouseX = (m_inputManager != null ? m_inputManager.GetMouseX() : Input.GetAxis("Mouse X")) * m_mouseSensitivity * Time.deltaTime;
+            float mouseY = (m_inputManager != null ? m_inputManager.GetMouseY() : Input.GetAxis("Mouse Y")) * m_mouseSensitivity * Time.deltaTime;
 
             //Every frame we are going to decrease our xRotation based on mouseY.
             m_xRotation -= mouseY;

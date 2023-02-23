@@ -17,6 +17,7 @@ namespace Test
         [SerializeField] private Image m_isCentered;
         private Color m_centeredRed = Color.red;
         private bool m_objGrabbed = false;
+
        
         
 
@@ -78,7 +79,7 @@ namespace Test
                     //Debug.Log(_objG.ID);
                     m_objectHit = _objG;
 
-                    if (Input.GetMouseButtonDown(0) && !m_objGrabbed)
+                    if (m_inputManager != null ? m_inputManager.IsMousePressed():Input.GetMouseButtonDown(0) && !m_objGrabbed)
                     {
                         m_grabbedObj = m_objectHit;
                         m_objectHit.Grab(m_objectHit.transform);
@@ -135,11 +136,7 @@ namespace Test
             Interact();
 
 
-
-
-
-
-            if (Input.GetKeyDown(KeyCode.Space) && m_objGrabbed)
+            if (m_inputManager != null ? m_inputManager.IsSpacePressed() : Input.GetKeyDown(KeyCode.Space) && m_objGrabbed)
             {
                 m_grabbedObj.transform.SetParent(null);
                 m_grabbedObj = null;
